@@ -1,4 +1,4 @@
-package com.cwl.androidsample;
+package com.cwl.androidsample.effect;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;

@@ -23,6 +23,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="viewpager动画"/>
+
+            <Button
+                android:id="@+id/behavior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义behavior"/>
+
+            <Button
+                android:id="@+id/scroller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scroller使用"/>
+
+            <Button
+                android:id="@+id/collasping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="折叠"/>
         </LinearLayout>
     </ScrollView>
 </ScrollView>

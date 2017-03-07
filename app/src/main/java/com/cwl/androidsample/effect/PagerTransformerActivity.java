@@ -9,8 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.cwl.androidsample.R;
-import com.cwl.androidsample.ZoomOutPageTransformer;
+import com.cwl.androidsample.*;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -29,7 +28,7 @@ public class PagerTransformerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pager_transformer);
         ButterKnife.bind(this);
         final View[] views=new View[4];
-        final int[] color={Color.CYAN,Color.GRAY,Color.GREEN,Color.LTGRAY};
+        final int[] color={Color.CYAN,Color.GRAY,Color.GREEN,Color.RED};
         for (int i = 0; i < views.length; i++) {
             View view=new View(this);
             view.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,500));
@@ -66,7 +65,6 @@ public class PagerTransformerActivity extends AppCompatActivity {
 //        ((ViewGroup) vp.getParent()).setClipChildren(false);
         //必须设置缓存数默认2个可能导致有一边的view不能显示
         vp.setOffscreenPageLimit(3);
-
-        vp.setPageTransformer(false,new ZoomOutPageTransformer());
+        vp.setPageTransformer(true,new ZoomOutPageTransformer());
     }
 }

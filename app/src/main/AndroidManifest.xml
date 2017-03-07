@@ -19,7 +19,10 @@
         <activity
             android:name=".effect.BActivity"
             android:theme="@style/AppTheme.Translucent" />
-        <activity android:name=".effect.PagerTransformerActivity"></activity>
+        <activity android:name=".effect.PagerTransformerActivity" />
+        <activity android:name=".effect.BehaviorActivity" />
+        <activity android:name=".effect.ScrollerActivity" />
+        <activity android:name=".effect.CollaspingActivity"></activity>
     </application>
 
 </manifest>

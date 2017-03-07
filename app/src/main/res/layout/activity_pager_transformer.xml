@@ -6,10 +6,18 @@
     android:layout_height="match_parent"
     android:clipChildren="false"
     tools:context="com.cwl.androidsample.effect.PagerTransformerActivity">
-    <android.support.v4.view.ViewPager
-        android:id="@+id/vp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:clipChildren="false"/>
+
+    <com.cwl.androidsample.effect.WrapperViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+        <com.cwl.androidsample.effect.DragViewPager
+            android:id="@+id/vp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:clipChildren="false"/>
+    </com.cwl.androidsample.effect.WrapperViewPager>
+
 </RelativeLayout>
